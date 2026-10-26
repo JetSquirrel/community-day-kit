@@ -1,0 +1,122 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Feishu bitable → S3 content sync for the Bridge with Signal site
+
+Parameters:
+  FeishuAppId:
+    Type: String
+    Description: Feishu custom app — App ID
+  FeishuAppSecret:
+    Type: String
+    NoEcho: true
+    Description: Feishu custom app — App Secret
+  FeishuBitableAppToken:
+    Type: String
+    Description: Bitable app_token (from the bitable URL)
+  FeishuSpeakersTableId:
+    Type: String
+    Description: table_id of the speakers table
+  FeishuSponsorsTableId:
+    Type: String
+    Description: table_id of the sponsors table
+  SyncToken:
+    Type: String
+    NoEcho: true
+    MinLength: 16
+    Description: Shared secret required on the HTTP sync trigger (?token=...)
+
+Resources:
+  # 账户级 S3 Block Public Access 开启了 BlockPublicPolicy，公开桶策略会被拒绝；
+  # 与 amplify/backend.ts 的 AssetsCdn 同方案：桶保持私有，仅 content/* 经 CloudFront + OAC 分发。
+  # 同步函数写对象时带 Cache-Control: max-age=60，边缘缓存一分钟内自动刷新。
+  ContentBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        IgnorePublicAcls: true
+        BlockPublicPolicy: true
+        RestrictPublicBuckets: true
+
+  ContentOac:
+    Type: AWS::CloudFront::OriginAccessControl
+    Properties:
+      OriginAccessControlConfig:
+        Name: community-day-content-oac
+        OriginAccessControlOriginType: s3
+        SigningBehavior: always
+        SigningProtocol: sigv4
+
+  ContentDistribution:
+    Type: AWS::CloudFront::Distribution
+    Properties:
+      DistributionConfig:
+        Enabled: true
+        Comment: Community Day site content (content/*)
+        Origins:
+          - Id: content
+            DomainName: !GetAtt ContentBucket.RegionalDomainName
+            S3OriginConfig:
+              OriginAccessIdentity: ''
+            OriginAccessControlId: !Ref ContentOac
+        DefaultCacheBehavior:
+          TargetOriginId: content
+          ViewerProtocolPolicy: redirect-to-https
+          Compress: true
+          CachePolicyId: 658327ea-f89d-4fab-a63d-7e88639e58f6 # Managed-CachingOptimized（尊重源站 max-age=60）
+          ResponseHeadersPolicyId: 5cc3b908-e619-4b99-88e5-2cf7f45965bd # Managed-CORS-With-Preflight
+
+  ContentBucketPolicy:
+    Type: AWS::S3::BucketPolicy
+    Properties:
+      Bucket: !Ref ContentBucket
+      PolicyDocument:
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: cloudfront.amazonaws.com
+            Action: s3:GetObject
+            Resource: !Sub '${ContentBucket.Arn}/content/*'
+            Condition:
+              StringEquals:
+                AWS:SourceArn: !Sub 'arn:aws:cloudfront::${AWS::AccountId}:distribution/${ContentDistribution.Id}'
+
+  SyncFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: ./
+      Runtime: nodejs20.x
+      Architectures: [arm64]
+      Handler: index.handler
+      Timeout: 30
+      MemorySize: 256
+      Environment:
+        Variables:
+          FEISHU_APP_ID: !Ref FeishuAppId
+          FEISHU_APP_SECRET: !Ref FeishuAppSecret
+          FEISHU_BITABLE_APP_TOKEN: !Ref FeishuBitableAppToken
+          FEISHU_SPEAKERS_TABLE_ID: !Ref FeishuSpeakersTableId
+          FEISHU_SPONSORS_TABLE_ID: !Ref FeishuSponsorsTableId
+          S3_BUCKET: !Ref ContentBucket
+          S3_PREFIX: content
+          SYNC_TOKEN: !Ref SyncToken
+      Policies:
+        - Statement:
+            - Effect: Allow
+              Action: s3:PutObject
+              Resource: !Sub '${ContentBucket.Arn}/content/*'
+      FunctionUrlConfig:
+        AuthType: NONE
+      Events:
+        ScheduledSync:
+          Type: Schedule
+          Properties:
+            Schedule: rate(5 minutes)
+
+Outputs:
+  ContentBaseUrl:
+    Description: Set this as VITE_CONTENT_BASE_URL in the Amplify console
+    Value: !Sub 'https://${ContentDistribution.DomainName}/content'
+  SyncEndpoint:
+    Description: POST here with ?token=$SyncToken to sync immediately
+    Value: !GetAtt SyncFunctionUrl.FunctionUrl

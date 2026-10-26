@@ -1,0 +1,48 @@
+# 运营里程碑（倒排）。anchor 为 date（活动日）或 deadlines.<key>；offset 为相对天数。
+# 来源：2026 秋深圳 8/6 启动会 → 10/9 最后一次例会 的实际节奏，已按复盘修正。
+# automation 列说明 cdkit 替你做了什么；为空即纯人工。
+
+- { id: kickoff, phase: 启动期, kind: milestone, title: 启动会：定场地候选、赛道、出品人、赞助负责人, owner: 统筹, offset: -72,
+    automation: "cdkit new 复制上一届配置并平移所有日期；cdkit plan 生成本表、日历与飞书项目总表" }
+- { id: feishu-init, phase: 启动期, kind: milestone, title: 建飞书多维表格（投稿/嘉宾/赞助/志愿者/待办/发信台账）, owner: 技术, offset: -71,
+    automation: "cdkit feishu:init 按 schema 一键建表（含状态选项），不再手工加列" }
+- { id: venue-lock, phase: 启动期, kind: milestone, title: 场地签约 + 实地测量（走廊宽度/展位数/电源/网络/电梯）, owner: 物料/场地, offset: -60,
+    detail: "兜底场地同步准备；测量结果回填 event.yaml venue.rooms / boothCount" }
+- { id: cfp-open, phase: 征稿期, kind: milestone, title: CFP 开放（官网表单上线、征稿海报发布）, owner: 讲师/议程, anchor: deadlines.cfpOpen,
+    automation: "官网征稿页、赛道说明、提交校验由 event.yaml 生成；后台「推文物料」一键出征稿海报" }
+- { id: cfp-push, phase: 征稿期, kind: ops, title: 定向邀约：上届未入选者、内部 SA、合作社区, owner: 讲师/议程, anchor: deadlines.cfpOpen, offset: 3,
+    automation: "（规划中）cdkit copy invite 个性化邀约草稿" }
+- { id: kv-draft, phase: 征稿期, kind: milestone, title: 主 KV 初稿, owner: 设计, offset: -56 }
+- { id: kv-final, phase: 征稿期, kind: milestone, title: 主 KV 定稿 + 嘉宾海报底图 / 邀请函底板 / 社区邀请海报底图, owner: 设计, anchor: deadlines.cfpClose,
+    detail: "底图需标出照片框、姓名、议题、logo、二维码的位置，交给技术做自动生成" }
+- { id: cfp-close, phase: 评审期, kind: milestone, title: CFP 截止（不延期）, owner: 讲师/议程, anchor: deadlines.cfpClose }
+- { id: review, phase: 评审期, kind: milestone, title: 三方打分 + AI 预审意见（相关性/赛道匹配/重复/敏感词）, owner: 讲师/议程, anchor: deadlines.cfpClose, offset: 1,
+    automation: "cdkit ai:cfp --write 为每条投稿写入 AI 摘要、建议赛道、风险提示列，评审只需打分" }
+- { id: accept-batch, phase: 评审期, kind: milestone, title: 生成录用批次 → 名额校验 → 二次确认后发信, owner: 讲师/议程, anchor: deadlines.reviewDone,
+    detail: "飞书改状态不会自动发信。发信只在后台「发信台」生成批次并确认后进行",
+    automation: "发信台按赛道 quota 校验，超额整批拦截；同一人同一模板永不重发；候补池自动排序" }
+- { id: speaker-confirm, phase: 讲师期, kind: milestone, title: 讲者确认截止（未确认按候补递补）, owner: 讲师/议程, anchor: deadlines.speakerConfirm,
+    automation: "未确认者 D-40/D-39 自动提醒；截止后后台一键生成递补批次（同样过名额校验）" }
+- { id: speaker-groups, phase: 讲师期, kind: ops, title: 讲者拉群、发 PPT 模板与材料规范链接, owner: 讲师/议程, anchor: deadlines.speakerConfirm, offset: 1,
+    automation: "录用邮件已附材料页链接：页面先展示照片 / PPT 规范，再上传，AI 即时预审" }
+- { id: agenda-freeze, phase: 讲师期, kind: milestone, title: 议程冻结（仅保留赞助商灵活位）, owner: 讲师/议程, anchor: deadlines.agendaFreeze,
+    automation: "议程在飞书「议程」视图维护，官网日程页自动同步；（规划中）cdkit agenda:check 检查时段冲突/会场容量/讲者重复" }
+- { id: photos-done, phase: 讲师期, kind: milestone, title: 讲者照片全部合格（海报可批量生成）, owner: 讲师/议程, anchor: deadlines.agendaFreeze,
+    automation: "上传时已校验尺寸比例 + AI 质量审核；后台一键批量生成全部嘉宾海报 zip" }
+- { id: sponsor-materials, phase: 讲师期, kind: milestone, title: 赞助商高清 Logo / 展位信息 / 礼品清单截止, owner: 赞助, anchor: deadlines.sponsorMaterials,
+    automation: "Logo 上传页要求 SVG/AI/高清 PNG 并校验分辨率；缺失自动催交" }
+- { id: deck-draft, phase: 材料期, kind: milestone, title: PPT 初稿截止, owner: 讲师/议程, anchor: deadlines.deckDraft,
+    automation: "上传即 AI 按规范逐条预审并给出修改建议；未交者 D-20/D-18/D-17 自动提醒" }
+- { id: volunteer-plan, phase: 材料期, kind: ops, title: 志愿者分组排班（含英文能力匹配）, owner: 志愿者, offset: -14,
+    automation: "（规划中）cdkit ai:roster 按岗位需求 / 英文能力 / 时段生成排班草案" }
+- { id: checkin-points, phase: 材料期, kind: ops, title: 打卡点位清单 + 展位序号/负责人/简介定稿, owner: 物料/场地, offset: -9 }
+- { id: deck-final, phase: 材料期, kind: milestone, title: PPT 终稿截止（交给现场投屏负责人）, owner: 讲师/议程, anchor: deadlines.deckFinal,
+    automation: "终稿汇总包按会场 / 时段自动命名打包" }
+- { id: volunteer-training, phase: 冲刺期, kind: ops, title: 志愿者线上全流程培训, owner: 志愿者, offset: -6,
+    automation: "守桥人指引页（志愿者门户）按 event.yaml 生成" }
+- { id: sms-reminder, phase: 冲刺期, kind: ops, title: 参会短信：Workshop 自带电脑 / 签到时间 / 交通, owner: 宣发, offset: -3,
+    automation: "（规划中）cdkit copy sms 生成短信文案" }
+- { id: rehearsal, phase: 冲刺期, kind: milestone, title: 场地调试 + 彩排（直播 / 字幕 / 投屏 / 打卡核销）, owner: 技术, offset: -1 }
+- { id: event-day, phase: 活动日, kind: milestone, title: 活动日, owner: 统筹, offset: 0 }
+- { id: retro, phase: 回顾期, kind: milestone, title: 复盘会（纪要导入 cdkit，转为下届 playbook 修改项）, owner: 统筹, offset: 7,
+    automation: "cdkit minutes 把飞书智能纪要转为待办 + 决定 + 需同步的配置变化" }

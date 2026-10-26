@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <rect width="800" height="600" fill="#FFD900"/>
+  <!-- big screen with wifi -->
+  <rect x="180" y="60" width="440" height="250" rx="8" fill="#FFF9E3" stroke="#141414" stroke-width="4"/>
+  <g fill="none" stroke="#141414" stroke-width="6" stroke-linecap="round">
+    <path d="M340 210 Q400 160 460 210"/>
+    <path d="M360 240 Q400 200 440 240"/>
+    <path d="M380 268 Q400 246 420 268"/>
+  </g>
+  <circle cx="400" cy="288" r="8" fill="#6C3FD4" stroke="#141414" stroke-width="3"/>
+  <!-- speaker + lectern -->
+  <circle cx="400" cy="336" r="22" fill="#141414"/>
+  <path d="M400 360 V330" stroke="#141414" stroke-width="4"/>
+  <circle cx="400" cy="324" r="8" fill="#141414"/>
+  <rect x="340" y="360" width="120" height="140" rx="6" fill="#2B5CE6" stroke="#141414" stroke-width="4"/>
+  <!-- audience -->
+  <g fill="#141414">
+    <circle cx="120" cy="500" r="16"/><path d="M94 556 A26 26 0 0 1 146 556 Z"/>
+    <circle cx="240" cy="500" r="16"/><path d="M214 556 A26 26 0 0 1 266 556 Z"/>
+    <circle cx="560" cy="500" r="16"/><path d="M534 556 A26 26 0 0 1 586 556 Z"/>
+    <circle cx="680" cy="500" r="16"/><path d="M654 556 A26 26 0 0 1 706 556 Z"/>
+    <circle cx="400" cy="520" r="18"/><path d="M362 586 A38 38 0 0 1 438 586 Z"/>
+  </g>
+</svg>

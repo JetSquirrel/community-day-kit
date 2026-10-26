@@ -1,0 +1,21 @@
+# dependencies
+node_modules
+
+# build output
+dist
+
+# env files (keep .env.example tracked)
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# AWS SAM / lambda packaging
+.aws-sam
+lambda/feishu-content-sync/function.zip
+
+# logs
+*.log
+
+# OS
+.DS_Store

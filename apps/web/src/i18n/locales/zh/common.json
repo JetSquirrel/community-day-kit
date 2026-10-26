@@ -1,0 +1,57 @@
+{
+  "nav": {
+    "overview": "概览",
+    "schedule": "日程",
+    "speakers": "嘉宾",
+    "cfp": "征稿",
+    "sponsors": "赞助",
+    "volunteers": "志愿者",
+    "faq": "FAQ",
+    "past": "往届"
+  },
+  "meta": {
+    "title": "Bridge with Signal — 2026 亚马逊云科技 Community Day 深圳",
+    "description": "Bridge with Signal · 以价值信号连通现在与未来 — 2026 亚马逊云科技 Community Day 深圳，用户社区年度大会。2026.10.17，600+ 开发者，20+ 技术演讲，4 大并行分论坛。"
+  },
+  "site": {
+    "event": "2026 亚马逊云科技 Community Day · 深圳",
+    "city": "中国 · 深圳",
+    "nameCn": "以价值信号连通现在与未来",
+    "dateChip": "10.17 SAT"
+  },
+  "footer": {
+    "communityTitle": "亚马逊云科技用户社区",
+    "communityBody": "亚马逊云科技 User Group 是由全球亚马逊云科技开发者自发组织的社区。我们定期举办技术分享、动手实验与年度 Community Day，让价值信号抵达每一位建造者。",
+    "quickNav": "快速导航",
+    "contactTitle": "联系",
+    "qrAlt": "公众号二维码（占位）",
+    "qrCaption": "公众号 · 扫码关注",
+    "organizerTitle": "主办",
+    "organizerHost": "主办：亚马逊云科技用户社区（User Group）",
+    "organizerSupport": "支持：亚马逊云科技",
+    "copyright": "© 2026 亚马逊云科技用户社区 · BRIDGE WITH SIGNAL",
+    "locationBar": "SHENZHEN // 10.17"
+  },
+  "common": {
+    "register": "立即报名"
+  },
+  "notFound": {
+    "label": "OFF THE MAP",
+    "title": "桥的这一端没有路",
+    "note": "你访问的页面不存在或已移动。回到桥上，继续向前。",
+    "comingSoon": "COMING SOON · 页面建设中",
+    "backHome": "回到首页"
+  },
+  "aria": {
+    "home": "Bridge with Signal 首页",
+    "mainNav": "主导航",
+    "mobileNav": "移动端导航",
+    "openMenu": "打开菜单",
+    "closeMenu": "关闭菜单"
+  },
+  "comingSoon": {
+    "label": "COMING SOON",
+    "title": "内容筹备中",
+    "note": "日程信息正在确认中，公布前暂不展示。嘉宾阵容已公布，欢迎先认识今年的演讲者。"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "@cdkit/ai",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": { ".": "./src/index.ts" },
+  "dependencies": {
+    "@anthropic-ai/bedrock-sdk": "latest",
+    "@anthropic-ai/sdk": "latest",
+    "@cdkit/core": "*",
+    "@cdkit/media": "*",
+    "zod": "^4.3.5"
+  }
+}

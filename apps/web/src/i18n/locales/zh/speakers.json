@@ -1,0 +1,24 @@
+{
+  "hero": {
+    "kicker": "SPEAKERS // 30+ BUILDERS",
+    "titleCn": "桥上的人",
+    "sub": "他们带着各自的信号走上桥。"
+  },
+  "filter": {
+    "all": "全部",
+    "confirmed": "{{count}} CONFIRMED"
+  },
+  "openSeat": {
+    "signal": "SIGNALS INCOMING",
+    "first": "席位评审中，陆续揭晓",
+    "second": "更多席位即将公布"
+  },
+  "card": {
+    "detailsAria": "{{name}}，查看嘉宾详情"
+  },
+  "modal": {
+    "title": "嘉宾详情",
+    "titleWithName": "{{name}} · 嘉宾详情",
+    "viewSession": "查看该场议程"
+  }
+}

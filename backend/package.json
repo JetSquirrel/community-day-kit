@@ -1,0 +1,30 @@
+{
+  "name": "@cdkit/backend",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "sandbox": "ampx sandbox",
+    "typecheck": "tsc -p amplify/tsconfig.json --noEmit",
+    "test": "node --test amplify/functions/admin-api/lib.test.mjs"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.1037.0",
+    "@aws-sdk/client-lambda": "^3.1037.0",
+    "@aws-sdk/client-s3": "^3.1037.0",
+    "@aws-sdk/lib-dynamodb": "^3.1037.0",
+    "@aws-sdk/s3-request-presigner": "^3.1037.0",
+    "@cdkit/ai": "*",
+    "@cdkit/core": "*",
+    "@cdkit/feishu": "*",
+    "@cdkit/media": "*",
+    "@cdkit/outbox": "*"
+  },
+  "devDependencies": {
+    "@aws-amplify/backend": "^1.22.0",
+    "@aws-amplify/backend-cli": "^1.8.2",
+    "aws-cdk-lib": "^2.234.1",
+    "constructs": "^10.6.0",
+    "esbuild": "^0.28.0"
+  }
+}

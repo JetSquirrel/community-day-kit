@@ -1,0 +1,15 @@
+{
+  "name": "@cdkit/cli",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "bin": { "cdkit": "./src/index.ts" },
+  "dependencies": {
+    "@cdkit/ai": "*",
+    "@cdkit/core": "*",
+    "@cdkit/feishu": "*",
+    "@cdkit/media": "*",
+    "@cdkit/outbox": "*",
+    "yaml": "^2.8.1"
+  }
+}

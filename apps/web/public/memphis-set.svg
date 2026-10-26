@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 640" width="960" height="640">
+  <g id="wave-1" fill="none" stroke="#141414" stroke-width="7" stroke-linecap="round">
+    <path d="M30 84 q18 -22 36 0 t36 0 t36 0 t36 0 t36 0"/>
+  </g>
+  <g id="dots-1" fill="#FF4D3D">
+    <circle cx="300" cy="60" r="8"/><circle cx="335" cy="48" r="8"/><circle cx="370" cy="64" r="8"/>
+    <circle cx="320" cy="95" r="8"/><circle cx="358" cy="100" r="8"/>
+  </g>
+  <g id="tri-1" fill="none" stroke="#6C3FD4" stroke-width="7" stroke-linejoin="round">
+    <path d="M550 118 L600 38 L650 118 Z"/>
+  </g>
+  <g id="ring" fill="none" stroke="#6C3FD4" stroke-width="10">
+    <circle cx="840" cy="80" r="42"/>
+  </g>
+  <g id="wave-2" fill="none" stroke="#2B5CE6" stroke-width="7" stroke-linecap="round">
+    <path d="M30 244 q18 -22 36 0 t36 0 t36 0 t36 0 t36 0"/>
+  </g>
+  <g id="dots-2" fill="#141414">
+    <circle cx="300" cy="220" r="8"/><circle cx="335" cy="208" r="8"/><circle cx="370" cy="224" r="8"/>
+    <circle cx="320" cy="255" r="8"/><circle cx="358" cy="260" r="8"/>
+  </g>
+  <g id="tri-2" fill="none" stroke="#2ECC71" stroke-width="7" stroke-linejoin="round">
+    <path d="M550 278 L600 198 L650 278 Z"/>
+  </g>
+  <g id="cross" fill="none" stroke="#2B5CE6" stroke-width="12" stroke-linecap="round">
+    <path d="M790 200 L890 280 M890 200 L790 280"/>
+  </g>
+  <g id="zigzag" fill="none" stroke="#FF4D3D" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M30 400 L60 360 L90 400 L120 360 L150 400 L180 360 L210 400"/>
+  </g>
+</svg>

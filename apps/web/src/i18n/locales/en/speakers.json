@@ -1,0 +1,24 @@
+{
+  "hero": {
+    "kicker": "SPEAKERS // 30+ BUILDERS",
+    "titleCn": "Builders on the Bridge",
+    "sub": "Each of them steps onto the bridge carrying a signal of their own."
+  },
+  "filter": {
+    "all": "All",
+    "confirmed": "{{count}} CONFIRMED"
+  },
+  "openSeat": {
+    "signal": "SIGNALS INCOMING",
+    "first": "Under review — revealed soon",
+    "second": "More seats to be announced"
+  },
+  "card": {
+    "detailsAria": "{{name}} — view speaker details"
+  },
+  "modal": {
+    "title": "Speaker Details",
+    "titleWithName": "{{name}} · Speaker Details",
+    "viewSession": "View this session"
+  }
+}

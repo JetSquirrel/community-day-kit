@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 640" width="1920" height="640">
+  <rect width="1920" height="640" fill="#FFD900"/>
+  <!-- left bank skyline corner -->
+  <path d="M0 640 V520 H40 V470 H78 V540 H110 V500 H140 V640 Z" fill="#141414"/>
+  <!-- right bank skyline corner -->
+  <path d="M1920 640 V500 H1884 V440 H1872 V500 H1830 V480 H1800 V640 Z" fill="#141414"/>
+  <!-- water waves under arch -->
+  <path d="M620 566 q24 -18 48 0 t48 0 t48 0" fill="none" stroke="#141414" stroke-width="6" stroke-linecap="round"/>
+  <path d="M900 596 q24 -18 48 0 t48 0 t48 0" fill="none" stroke="#141414" stroke-width="6" stroke-linecap="round"/>
+  <path d="M1180 572 q24 -18 48 0 t48 0 t48 0" fill="none" stroke="#141414" stroke-width="6" stroke-linecap="round"/>
+  <!-- the bridge: blue arch -->
+  <path d="M120 330 L1800 330 L1800 372 L1740 372 Q960 640 180 372 L120 372 Z" fill="#2B5CE6" stroke="#141414" stroke-width="7" stroke-linejoin="round"/>
+  <!-- deck blocks -->
+  <g stroke="#141414" stroke-width="5">
+    <rect x="420" y="304" width="26" height="26" fill="#6C3FD4"/>
+    <rect x="640" y="304" width="26" height="26" fill="#FF4D3D"/>
+    <rect x="860" y="304" width="26" height="26" fill="#2ECC71"/>
+    <rect x="1080" y="304" width="26" height="26" fill="#FF8A00"/>
+    <rect x="1500" y="304" width="26" height="26" fill="#6C3FD4"/>
+  </g>
+  <!-- 桥面信号小球由 Hero.tsx 里的 GSAP 时间线驱动（要与吉祥物躲避动作同步，SMIL 时钟 JS 读不到） -->
+</svg>

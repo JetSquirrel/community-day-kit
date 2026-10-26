@@ -1,0 +1,25 @@
+{
+  "name": "community-day-kit",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "AWS Community Day 一站式脚手架：一份 event.yaml 生成官网 + 报名/材料/通知后端 + AI 助手 + 倒排运营计划",
+  "workspaces": [
+    "packages/*",
+    "cli",
+    "backend"
+  ],
+  "scripts": {
+    "cdkit": "tsx cli/src/index.ts",
+    "test": "node --import tsx --test \"packages/*/src/**/*.test.ts\" \"cli/src/**/*.test.ts\"",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "tsx": "^4.21.0",
+    "typescript": "~5.9.3"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "hero": {
+    "sub": "09:00–17:30 · 上午主论坛 Keynote，下午三座桥并行分论坛 + Workshop。点击任意场次查看详情。"
+  },
+  "filter": {
+    "all": "全部",
+    "keynoteBridge": "主桥 · Keynote",
+    "ariaLabel": "按分论坛筛选"
+  },
+  "view": {
+    "switchAria": "视图切换",
+    "timeline": "时间线",
+    "tracks": "分轨"
+  },
+  "card": {
+    "detailsAria": "{{time}} {{title}}，查看详情"
+  },
+  "modal": {
+    "label": "场次详情",
+    "labelWithTitle": "{{title}} · 场次详情",
+    "speakerHeading": "SPEAKER // 讲者",
+    "speakersHeading": "SPEAKERS // 讲者",
+    "viewSpeaker": "查看讲者",
+    "tbaBody": "讲者信息即将公布。",
+    "tbaCta": "了解 CFP 评审进展",
+    "addToCalendar": "加入日历",
+    "allSpeakers": "全部嘉宾",
+    "close": "关闭",
+    "closeAria": "关闭弹窗"
+  },
+  "cta": {
+    "title": "还没报名？",
+    "cfpNote": "CFP 已截止 // 评审进行中",
+    "submit": "了解 CFP"
+  }
+}

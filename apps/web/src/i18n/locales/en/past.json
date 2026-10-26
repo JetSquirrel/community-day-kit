@@ -1,0 +1,31 @@
+{
+  "hero": {
+    "kicker": "PAST EVENTS // SINCE 2023",
+    "title": "The Bridges We Crossed",
+    "sub": "From our first gathering in 2023 to Signal over Noise in summer 2026 — every edition is a bridge the community built together."
+  },
+  "timeline": {
+    "aria": "Past editions timeline: bridge after bridge",
+    "tail": "2026.10 // BRIDGE WITH SIGNAL · UNDER CONSTRUCTION →",
+    "next": "The next bridge is coming together."
+  },
+  "stats": {
+    "title": "The Signal Grows Stronger",
+    "note": "Cumulative figures, 2023 – summer 2026"
+  },
+  "gallery": {
+    "title": "Snapshots of Every Bridge",
+    "sub": "Illustrated keepsake cards — one per edition, for everyone who crossed.",
+    "openRecap": "Open the {{year}} · {{theme}} recap",
+    "recapAria": "{{year}} · {{theme}} Recap",
+    "close": "Close",
+    "archive": "View the archived site from that year",
+    "archiveBadge": "ARCHIVE // COMING SOON"
+  },
+  "next": {
+    "kicker": "NEXT BRIDGE // 2026.10.17",
+    "title": "The next bridge — let's build it together.",
+    "body": "October 17, Shenzhen. Bring your signal — see you at the bridge.",
+    "cfp": "CFP Closed"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "hero": {
+    "kicker": "CALL FOR PROPOSALS // NOW OPEN",
+    "kickerClosed": "CALL FOR PROPOSALS // CLOSED",
+    "title": "Bring Your Signal",
+    "titleCn": "Bring your signal onto the bridge",
+    "desc": "The Call for Proposals for 2026 Community Day Shenzhen is now open. A hard-won production lesson, the evolution of an open-source project, or a leap from engineering into management — if it helps someone else cross the bridge, it makes a great talk.",
+    "descClosed": "The Call for Proposals for 2026 Community Day Shenzhen closed on 08.31. Thanks to everyone who transmitted a signal — reviews are underway and results will be emailed to submitters.",
+    "ctaApply": "Submit Now",
+    "ctaPerks": "See Speaker Perks ↓",
+    "bubble": "CFP OPEN // 08.31",
+    "bubbleClosed": "CFP CLOSED // 08.31",
+    "status": "STATUS // OPEN · DEADLINE 2026.08.31 23:59 (UTC+8)",
+    "statusClosed": "STATUS // CLOSED · ENDED 2026.08.31 23:59 (UTC+8) · UNDER REVIEW"
+  },
+  "topics": {
+    "label": "TOPICS",
+    "title": "Eight Signal Channels",
+    "sub": "Not limited to the channels below — anything related to cloud computing and developer practice is welcome to transmit."
+  },
+  "formats": {
+    "fitLabel": "BEST FOR"
+  },
+  "timeline": {
+    "label": "TIMELINE",
+    "title": "Bridge-Building Timetable",
+    "deadlineNote": "Closed"
+  },
+  "perks": {
+    "label": "PERKS",
+    "title": "What Bridge-Builders Gain"
+  },
+  "submit": {
+    "label": "HOW TO SUBMIT",
+    "title": "Signal Launch Protocol"
+  },
+  "form": {
+    "closedKicker": "CLOSED",
+    "closedTitle": "The CFP closed on 08.31",
+    "closedBody": "Thanks to every bridge-builder who submitted! Reviews are underway and results will be emailed to submitters. Missed this edition? See you on the bridge next year.",
+    "mailtoCta": "Submit Now",
+    "doneKicker": "RECEIVED",
+    "doneTitle": "Your Signal Is on the Bridge 🎉",
+    "doneBody": "We've received your proposal \"{{talk}}\". Once the review is complete, the organizing committee will reach out by email — keep an eye on the inbox at {{email}}.",
+    "errorFallback": "Submission failed. Please try again later.",
+    "kicker": "SUBMIT // LAUNCH YOUR SIGNAL",
+    "title": "Put Your Proposal on the Review Table",
+    "nameLabel": "Name",
+    "namePlaceholder": "What should we call you",
+    "emailLabel": "Email",
+    "emailPlaceholder": "Where the acceptance notice goes",
+    "phoneLabel": "Phone (optional)",
+    "phonePlaceholder": "Only for urgent contact before the event",
+    "communityLabel": "Community Title (optional)",
+    "communityHint": "Select all that apply",
+    "communityNote": "Titles granted by AWS community programs: Community Hero / Community Builder / User Group Leader / User Group Ambassador. No worries if none apply — just leave it empty.",
+    "talkLabel": "Talk Title",
+    "talkPlaceholder": "≤30 chars — an instant must-hear",
+    "trackLabel": "Signal Channel",
+    "trackHints": {
+      "ai": "Talks on LLMs, generative AI, agents, RAG, and other AI topics.",
+      "builder": "Engineering practice talks: cloud architecture, cloud operations, serverless, IaC, platform engineering.",
+      "spark": "Startups / OPC (one-person company), indie development, tech entrepreneurship, open-source monetization.",
+      "global": "Going global & compliance (security): multi-region architecture, data compliance, cross-border networking, global infrastructure."
+    },
+    "formatLabel": "Format",
+    "abstractLabel": "Abstract",
+    "abstractHint": "{{count}}/1000, 50 characters minimum",
+    "abstractPlaceholder": "What you'll cover, why it's worth hearing, who it's for, and three takeaways the audience can take home",
+    "bioLabel": "Speaker Bio (optional)",
+    "bioPlaceholder": "Company / role / experience — a sentence or two is plenty",
+    "note": "Submissions go straight into review · results by email",
+    "privacy": "By submitting, you agree that we process your name, email, optional phone, and proposal solely for event review and contact. Data is stored in the organizers' Feishu base and an encrypted backup, retained per the organizers' retention policy after the event.",
+    "submitting": "Launching…",
+    "submitCta": "Launch Signal →",
+    "mailtoHint": "Prefer email? You can also send it to"
+  }
+}

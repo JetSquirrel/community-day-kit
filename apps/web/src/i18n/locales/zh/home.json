@@ -1,0 +1,64 @@
+{
+  "hero": {
+    "kicker": "2026 COMMUNITY DAY · SHENZHEN · USER GROUP",
+    "ctaCfp": "提交议题 CFP",
+    "ctaCfpClosed": "CFP 已截止 →",
+    "ctaSchedule": "查看日程 →",
+    "scrollHint": "SCROLL · 向下过桥",
+    "bridgeAlt": "蓝色拱桥横跨两岸，人与机器人并肩过桥"
+  },
+  "story": {
+    "title": "今年夏天，我们找到了信号。",
+    "body": "2026 夏天，Signal over Noise 让我们学会在信息的噪音里辨认真正有价值的信号。10 月 17 日，深圳——我们要做下一步：让信号成为一座桥，连通人与技术，连通现在与未来。"
+  },
+  "stats": {
+    "title": "一天，满格信号"
+  },
+  "highlights": {
+    "title": "为什么走上这座桥"
+  },
+  "bridge": {
+    "ariaLabel": "一座悬索桥正在被逐件建成",
+    "caption": "THE BRIDGE BUILDS ITSELF · 社区共建"
+  },
+  "tracks": {
+    "title": "四座桥，四种跨越",
+    "sub": "四个并行分论坛，各是一种桥。选一个渡口，或者全部走一遍。",
+    "illustrationAlt": "{{title}} 桥型插画",
+    "viewAgenda": "查看该桥议程"
+  },
+  "agenda": {
+    "title": "一天的过桥路线",
+    "fullSchedule": "完整日程"
+  },
+  "speakers": {
+    "title": "桥上的人",
+    "titleSub": "演讲嘉宾",
+    "allSpeakers": "全部嘉宾",
+    "openSeat": "虚位以待",
+    "yourSeat": "评审进行中 → /cfp",
+    "openSeatNote": "席位陆续揭晓"
+  },
+  "cfp": {
+    "title": "把你的信号带上桥",
+    "body": "议题征集已于 2026.08.31 截止，感谢每一位发射信号的建桥人。评审进行中，结果将邮件通知投稿人。",
+    "cta": "了解 CFP 详情",
+    "deadlineNote": "已截止 · 感谢投稿"
+  },
+  "sponsors": {
+    "title": "共建这座桥",
+    "titleSub": "赞助商",
+    "sub": "每一座桥都有共同建造者。感谢以下伙伴与社区同行。",
+    "become": "成为共建者",
+    "paidLabel": "赞助伙伴",
+    "partnersLabel": "合作伙伴"
+  },
+  "info": {
+    "title": "过桥须知",
+    "subscribed": "✓ 已登记，报名通道开启时第一时间通知你",
+    "emailPlaceholder": "you@example.com",
+    "emailAria": "邮箱",
+    "notify": "报名开启时通知我",
+    "allFaq": "全部问题"
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "hero": {
+    "kicker": "SPONSORSHIP // CO-BUILD",
+    "title": "Co-Build This Bridge",
+    "sub": "Every bridge needs co-builders. Join 600+ developers, 20+ speakers, and the entire Amazon Web Services (AWS) user community — make your brand part of the bridge."
+  },
+  "cta": {
+    "download": "Download the Sponsorship Deck",
+    "contact": "Get in Touch",
+    "mailSubject": "Sponsorship Deck Request // Bridge with Signal"
+  },
+  "anatomy": {
+    "ariaLabel": "Sponsorship tiers as bridge anatomy",
+    "svgAriaLabel": "Suspension bridge anatomy: towers map to Diamond sponsorship, main cable to Platinum, deck to Gold, and piers to Silver",
+    "hotspotAria": "{{part}} · {{name}} — view benefits",
+    "mailSubject": "Sponsorship Deck Request // {{name}}",
+    "requestTier": "Request This Tier's Deck"
+  },
+  "table": {
+    "label": "BENEFITS",
+    "title": "Benefits at a Glance",
+    "headerBenefit": "Benefit",
+    "included": "Included"
+  },
+  "past": {
+    "label": "PAST PARTNERS",
+    "title": "Past Co-Builders",
+    "sub": "They built the bridge with the community.",
+    "stats": "500K+ past impressions · 30+ developer communities reached · 10+ media partners"
+  },
+  "community": {
+    "title": "Fellow Travelers · This Edition's Co-builders",
+    "body": "Here are this edition's sponsors and community partners (the list keeps growing). Developer communities, tech media, and open-source organizations are welcome aboard — let's build the bridge further, together.",
+    "sponsorsLabel": "Sponsors",
+    "partnersLabel": "Community Partners",
+    "mailSubject": "Become a Community Partner // Bridge with Signal",
+    "cta": "Become a Partner"
+  },
+  "contact": {
+    "title": "Make Your Brand Part of the Bridge",
+    "deadline": "Sponsorship deadline // 2026.09.20"
+  },
+  "form": {
+    "kicker": "APPLY // CO-BUILD",
+    "title": "Submit Your Sponsorship Interest",
+    "companyLabel": "Company Name",
+    "companyPlaceholder": "The name shown publicly",
+    "contactLabel": "Contact Person",
+    "contactPlaceholder": "What should we call you",
+    "emailLabel": "Email",
+    "emailPlaceholder": "Where the proposal and logo link go",
+    "phoneLabel": "Phone (optional)",
+    "phonePlaceholder": "For urgent contact",
+    "tierLabel": "Preferred Tier",
+    "noteLabel": "Notes (optional)",
+    "notePlaceholder": "Benefits you're curious about, co-event ideas, etc.",
+    "logoLabel": "Company Logo (optional)",
+    "logoHint": "PNG / JPG / WebP, ≤4MB — or upload later via the email link once approved",
+    "note": "Sponsorship closes 2026.09.20 · a logo-upload link is emailed once approved",
+    "privacy": "By submitting, you agree that we process your company name, contact, email, optional phone, and preferred tier solely for sponsorship coordination. Data is stored in the organizers' Feishu base and an encrypted backup, retained per the organizers' retention policy after the event.",
+    "submitting": "Submitting…",
+    "submitCta": "Submit Interest →",
+    "doneKicker": "RECEIVED",
+    "doneTitle": "Interest Received 🎉",
+    "doneBody": "We've received the {{tier}} interest from {{company}}. The committee will reach out via {{email}} soon; once approved, we'll send a logo-upload link.",
+    "errorFallback": "Submission failed. Please try again later.",
+    "mailtoHint": "Prefer email? You can also send it to"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "hero": {
+    "kicker": "PAST EVENTS // SINCE 2023",
+    "title": "来时的桥",
+    "sub": "从 2023 年的第一次相聚，到 2026 夏天的 Signal over Noise——每一届大会，都是社区一起建成的一座桥。"
+  },
+  "timeline": {
+    "aria": "往届时间线：一座一座桥",
+    "tail": "2026.10 // BRIDGE WITH SIGNAL · 建设中 →",
+    "next": "下一座桥，正在合龙。"
+  },
+  "stats": {
+    "title": "信号越来越强",
+    "note": "数据为 2023–2026 夏累计口径"
+  },
+  "gallery": {
+    "title": "每座桥的留影",
+    "sub": "插画纪念卡——每届一张，留给过桥的人。",
+    "openRecap": "打开 {{year}} · {{theme}} 回顾",
+    "recapAria": "{{year}} · {{theme}} 回顾",
+    "close": "关闭",
+    "archive": "查看当时官网存档",
+    "archiveBadge": "ARCHIVE // COMING SOON"
+  },
+  "next": {
+    "kicker": "NEXT BRIDGE // 2026.10.17",
+    "title": "下一座桥，一起建。",
+    "body": "10 月 17 日，深圳。带着你的信号，桥见。",
+    "cfp": "本届 CFP 已截止"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "hero": {
+    "kicker": "CALL FOR PROPOSALS // NOW OPEN",
+    "kickerClosed": "CALL FOR PROPOSALS // CLOSED",
+    "title": "Bring Your Signal",
+    "titleCn": "把你的信号带上桥",
+    "desc": "2026 Community Day 深圳议题征集开启。无论是一次生产环境的踩坑、一个开源项目的演进，还是一段从技术到管理的跨越——只要它能帮别人过桥，就是好议题。",
+    "descClosed": "2026 Community Day 深圳议题征集已于 08.31 截止。感谢每一位发射信号的建桥人——评审正在进行，结果将通过邮件通知投稿人。",
+    "ctaApply": "立即投稿",
+    "ctaPerks": "查看演讲者权益 ↓",
+    "bubble": "CFP OPEN // 08.31",
+    "bubbleClosed": "CFP CLOSED // 08.31",
+    "status": "STATUS // OPEN · DEADLINE 2026.08.31 23:59 (UTC+8)",
+    "statusClosed": "STATUS // CLOSED · 已于 2026.08.31 23:59 (UTC+8) 截止 · 评审进行中"
+  },
+  "topics": {
+    "label": "TOPICS",
+    "title": "八个信号频道",
+    "sub": "不限于以下方向——只要与云计算和开发者实践相关，都欢迎发射信号。"
+  },
+  "formats": {
+    "fitLabel": "适合"
+  },
+  "timeline": {
+    "label": "TIMELINE",
+    "title": "建桥时刻表",
+    "deadlineNote": "已截止"
+  },
+  "perks": {
+    "label": "PERKS",
+    "title": "建桥人的收获"
+  },
+  "submit": {
+    "label": "HOW TO SUBMIT",
+    "title": "信号发射协议"
+  },
+  "form": {
+    "closedKicker": "CLOSED // 已截止",
+    "closedTitle": "议题征集已于 08.31 截止",
+    "closedBody": "感谢所有投稿的建桥人！评审正在进行中，结果将通过邮件通知投稿人。错过本届？明年桥上见。",
+    "mailtoCta": "立即投稿",
+    "doneKicker": "RECEIVED // 已收到",
+    "doneTitle": "信号已上桥 🎉",
+    "doneBody": "我们已收到你的议题《{{talk}}》。评审结果出来后，组委会会通过邮件联系你——留意 {{email}} 的收件箱。",
+    "errorFallback": "提交失败，请稍后重试",
+    "kicker": "SUBMIT // 信号发射",
+    "title": "把你的议题放上评审桌",
+    "nameLabel": "称呼",
+    "namePlaceholder": "怎么称呼你",
+    "emailLabel": "邮箱",
+    "emailPlaceholder": "录用通知发到这里",
+    "phoneLabel": "手机号（可选）",
+    "phonePlaceholder": "仅用于活动前紧急联络",
+    "communityLabel": "社区身份（可选）",
+    "communityHint": "可多选",
+    "communityNote": "亚马逊云科技社区项目授予的身份：Community Hero / Community Builder / User Group Leader / User Group Ambassador。都没有也完全没关系，留空即可。",
+    "talkLabel": "议题标题",
+    "talkPlaceholder": "≤30 字，让人一眼想听",
+    "trackLabel": "信号频道",
+    "trackHints": {
+      "ai": "大模型、生成式 AI、Agent、RAG 等 AI 方向的议题。",
+      "builder": "云架构、云运维、Serverless、IaC、平台工程等工程实践议题。",
+      "spark": "初创 / OPC（One-Person Company，一人公司）、独立开发、技术创业、开源商业化等议题。",
+      "global": "出海与合规（安全）：多区域架构、数据合规、跨境网络、全球基础设施等议题。"
+    },
+    "formatLabel": "演讲形式",
+    "abstractLabel": "摘要",
+    "abstractHint": "{{count}}/1000，至少 50 字",
+    "abstractPlaceholder": "讲什么、为什么值得听、目标听众、听众能带走的三个要点",
+    "bioLabel": "讲者简介（可选）",
+    "bioPlaceholder": "公司 / 角色 / 经历，一两句就好",
+    "note": "提交即进入评审 · 结果邮件通知",
+    "privacy": "提交即表示你同意我们仅为本次活动评审与联络处理你的姓名、邮箱、手机号（可选）及议题信息；数据保存在组委会飞书多维表格及加密备份中，活动结束后按组委会保留政策处理。",
+    "submitting": "发射中…",
+    "submitCta": "发射信号 →",
+    "mailtoHint": "更习惯邮件？也可以发送至"
+  }
+}

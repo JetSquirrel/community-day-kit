@@ -1,0 +1,36 @@
+{
+  "hero": {
+    "sub": "09:00–17:30 · Main Stage keynotes in the morning, three parallel bridge tracks + workshops in the afternoon. Click any session for details."
+  },
+  "filter": {
+    "all": "All",
+    "keynoteBridge": "Main Bridge · Keynote",
+    "ariaLabel": "Filter by track"
+  },
+  "view": {
+    "switchAria": "Switch view",
+    "timeline": "Timeline",
+    "tracks": "Tracks"
+  },
+  "card": {
+    "detailsAria": "{{time}} {{title}}, view details"
+  },
+  "modal": {
+    "label": "Session details",
+    "labelWithTitle": "{{title}} · Session details",
+    "speakerHeading": "SPEAKER",
+    "speakersHeading": "SPEAKERS",
+    "viewSpeaker": "View Speaker",
+    "tbaBody": "Speaker details coming soon.",
+    "tbaCta": "follow the CFP review",
+    "addToCalendar": "Add to Calendar",
+    "allSpeakers": "All Speakers",
+    "close": "Close",
+    "closeAria": "Close dialog"
+  },
+  "cta": {
+    "title": "Not registered yet?",
+    "cfpNote": "CFP closed // Under review",
+    "submit": "About the CFP"
+  }
+}

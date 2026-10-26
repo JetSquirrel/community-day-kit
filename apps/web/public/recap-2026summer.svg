@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <rect width="800" height="600" fill="#FFF9E3"/>
+  <!-- noise fragments -->
+  <path d="M120 150 L160 210 L90 210 Z" fill="#FF4D3D" stroke="#141414" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M186 274 L226 288 L212 328 L172 314 Z" fill="#2B5CE6" stroke="#141414" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="140" cy="360" r="16" fill="#141414"/>
+  <path d="M90 450 L115 425 L140 450 L165 425" fill="none" stroke="#141414" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M240 170 L262 205 L218 205 Z" fill="none" stroke="#141414" stroke-width="3" stroke-linejoin="round"/>
+  <text x="140" y="116" font-family="monospace" font-size="22" fill="#141414">404</text>
+  <text x="222" y="428" font-family="monospace" font-size="22" fill="#141414">???</text>
+  <!-- filter funnel -->
+  <path d="M340 180 L460 180 L420 300 L420 420 L380 420 L380 300 Z" fill="#6C3FD4" stroke="#141414" stroke-width="4" stroke-linejoin="round"/>
+  <!-- clean signal wave -->
+  <path d="M500 320 Q540 260 580 320 T660 320 T740 320" fill="none" stroke="#6C3FD4" stroke-width="5" stroke-linecap="round"/>
+</svg>

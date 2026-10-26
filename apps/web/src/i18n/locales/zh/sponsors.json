@@ -1,0 +1,69 @@
+{
+  "hero": {
+    "kicker": "SPONSORSHIP // CO-BUILD",
+    "title": "共建这座桥",
+    "sub": "每一座桥都需要共同建造者。与 600+ 开发者、20+ 讲者和整个亚马逊云科技用户社区同行，让你的品牌成为桥的一部分。"
+  },
+  "cta": {
+    "download": "下载赞助方案",
+    "contact": "联系洽谈",
+    "mailSubject": "索取赞助方案 // Bridge with Signal"
+  },
+  "anatomy": {
+    "ariaLabel": "赞助层级桥梁解剖图",
+    "svgAriaLabel": "悬索桥解剖图：主塔对应钻石赞助，主缆对应铂金赞助，桥面对应金牌赞助，桥墩对应银牌赞助",
+    "hotspotAria": "{{part}} · {{name}}，查看权益",
+    "mailSubject": "索取赞助方案 // {{name}}",
+    "requestTier": "索取该层级方案"
+  },
+  "table": {
+    "label": "BENEFITS",
+    "title": "权益一览",
+    "headerBenefit": "权益项",
+    "included": "包含"
+  },
+  "past": {
+    "label": "PAST PARTNERS",
+    "title": "往届共同建造者",
+    "sub": "他们曾与社区一起建桥。",
+    "stats": "往届曝光 50万+ · 覆盖开发者社群 30+ · 媒体合作 10+"
+  },
+  "community": {
+    "title": "同行者 · 本届共建者",
+    "body": "本届赞助伙伴与合作社区名单如下（持续更新）。欢迎开发者社区、技术媒体与开源组织同行，一起把桥建得更远。",
+    "sponsorsLabel": "赞助伙伴",
+    "partnersLabel": "社区合作伙伴",
+    "mailSubject": "成为社区合作伙伴 // Bridge with Signal",
+    "cta": "成为合作伙伴"
+  },
+  "contact": {
+    "title": "让你的品牌成为桥的一部分",
+    "deadline": "招商截止 // 2026.09.20"
+  },
+  "form": {
+    "kicker": "APPLY // CO-BUILD",
+    "title": "提交赞助意向",
+    "companyLabel": "公司名称",
+    "companyPlaceholder": "对外展示的名称",
+    "contactLabel": "联系人",
+    "contactPlaceholder": "怎么称呼你",
+    "emailLabel": "邮箱",
+    "emailPlaceholder": "方案沟通与 Logo 链接发到这里",
+    "phoneLabel": "手机号（可选）",
+    "phonePlaceholder": "紧急联络用",
+    "tierLabel": "意向档位",
+    "noteLabel": "备注（可选）",
+    "notePlaceholder": "想了解的权益、联合活动想法等",
+    "logoLabel": "公司 Logo（可选）",
+    "logoHint": "PNG / JPG / WebP，≤4MB；也可以等审核通过后通过邮件链接再传",
+    "note": "招商截止 2026.09.20 · 审核通过后邮件发送 Logo 上传链接",
+    "privacy": "提交即表示你同意我们仅为本次活动赞助对接与联络处理公司名称、联系人、邮箱、手机号（可选）及意向档位；数据保存在组委会飞书多维表格及加密备份中，活动结束后按组委会保留政策处理。",
+    "submitting": "提交中…",
+    "submitCta": "提交意向 →",
+    "doneKicker": "RECEIVED // 已收到",
+    "doneTitle": "意向已收到 🎉",
+    "doneBody": "我们已收到 {{company}} 的{{tier}}意向。组委会会尽快通过 {{email}} 与你联系；审核通过后将发送 Logo 上传链接。",
+    "errorFallback": "提交失败，请稍后重试",
+    "mailtoHint": "更习惯邮件？也可以发送至"
+  }
+}

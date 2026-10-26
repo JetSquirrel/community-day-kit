@@ -1,0 +1,134 @@
+# 2026 秋 · 深圳 —— 用本届真实参数回填的样例配置（也是 cdkit 的回归测试样本）
+# 日期 / 场地 / 名额取自 8/6–10/9 周会纪要与 2026Community Day Shenzhen.xlsx
+slug: 2026-autumn-shenzhen
+name: { zh: 2026 亚马逊云科技 Community Day · 深圳, en: 2026 AWS Community Day Shenzhen }
+slogan: { zh: 以价值信号连通现在与未来, en: Bridge with Signal }
+date: 2026-10-17
+timezone: Asia/Shanghai
+city: { zh: 中国 · 深圳, en: Shenzhen, China }
+domain: 2026-autumn.awscommunityday.cn
+contactEmail: contact@awscommunity.cn
+registerUrl: null
+expectedAttendees: 300
+
+theme:
+  id: bridge
+  colors: { bg: "#FFD900", ink: "#141414", primary: "#6C3FD4", accent: ["#FF4D3D", "#2B5CE6", "#2ECC71"] }
+
+venue:
+  name: 雪花科技大厦 6 楼
+  address: 深圳市宝安区新安街道兴东社区 70 区雪花路 1 号雪花科技大厦 6 楼（地铁兴东站 B 口）
+  boothCount: 8          # 3 付费卡座 + 3 礼品置换 + UG + 培训认证
+  rooms:
+    - { id: "501", name: 501 阶梯教室, floor: 5F, capacity: 170, kind: keynote, availability: am }
+    - { id: "603", name: 603 会议室, floor: 6F, capacity: 100, kind: session }
+    - { id: "608", name: 608 会议室, floor: 6F, capacity: 40, kind: session }
+    - { id: "601", name: 601 会议室, floor: 6F, capacity: 40, kind: workshop }
+    - { id: "607", name: 607 会议室, floor: 6F, capacity: 40, kind: workshop }
+    - { id: phone-1, name: 大电话间, floor: 6F, capacity: 4, kind: storage }
+
+# quota = 本赛道可录用讲题上限；发录用邮件时强制校验（本届 4 个论坛实际只需 18 位）
+tracks:
+  - { id: keynote, name: { zh: 主桥, en: Main Bridge }, signal: KEYNOTE, color: "#141414", textOn: "#FFD900", quota: 4, room: "501" }
+  - { id: ai, name: { zh: AI & 建造者桥, en: AI & Builder Bridge }, signal: AI SIGNAL, color: "#6C3FD4", quota: 7, room: "603" }
+  - { id: global, name: { zh: 远洋桥, en: Global Bridge }, signal: GLOBAL SIGNAL, color: "#2ECC71", textOn: "#141414", quota: 5, room: "608" }
+  - { id: spark, name: { zh: 星火桥, en: Spark Bridge }, signal: SPARK SIGNAL, color: "#FF4D3D", quota: 6, room: "603" }
+  - { id: workshop, name: { zh: Workshop, en: Workshop }, signal: HANDS-ON, color: "#2B5CE6", quota: 4, room: "601" }
+
+formats:
+  - { id: talk, label: 深度分享, minutes: 25 }
+  - { id: lightning, label: 闪电演讲, minutes: 10 }
+  - { id: workshop, label: Workshop, minutes: 60 }
+
+deadlines:
+  cfpOpen: 2026-08-06
+  cfpClose: 2026-08-31
+  reviewDone: 2026-09-04
+  speakerConfirm: 2026-09-09
+  agendaFreeze: 2026-09-15
+  deckDraft: 2026-09-30
+  deckFinal: 2026-10-09
+  sponsorMaterials: 2026-09-30
+
+review:
+  reviewers: [评审1, 评审2, 评审3]   # 投稿表会生成「评分-<名字>」列
+  passScore: 10
+  waitlistScore: 9
+
+sponsors:
+  tiers:
+    - { id: diamond, name: 钻石赞助, booth: true, talkSlots: 1, logoSize: xl }
+    - { id: platinum, name: 铂金赞助, booth: true, talkSlots: 1, logoSize: lg }
+    - { id: gold, name: 金牌赞助, booth: true, talkSlots: 1, logoSize: md }
+    - { id: silver, name: 银牌赞助, booth: false, talkSlots: 0, logoSize: md }
+    - { id: gift, name: 礼品赞助, booth: true, talkSlots: 0, logoSize: sm }
+    - { id: community, name: 社区合作伙伴, booth: false, talkSlots: 0, logoSize: sm }
+
+materials:
+  photo:
+    aspect: [4, 5]
+    minWidth: 800
+    minHeight: 1000
+    maxBytes: 8388608
+    guidelines:
+      - 竖版 4:5，至少 800×1000 像素（建议 1200×1500 以上），请上传原图，不要截图或微信压缩图
+      - 单人照：肩部以上到半身，正面或微侧，头顶留出约一拳空间，不要从合影里裁
+      - 对焦清晰、光线均匀，脸部无遮挡（墨镜 / 口罩 / 强逆光）
+      - 纯色或简洁背景，与衣服、头发颜色有区分（便于海报抠图）
+      - 不带水印、文字、logo、相框或贴纸；避免重度美颜滤镜
+  deck:
+    templateUrl: https://example.com/replace-with-official-template
+    maxBytes: 104857600
+    formats: [pptx, pdf]
+    maxSlidesPerMinute: 1.5
+    templateMarkers: [Community Day]
+    flaggedTerms: [Azure, Google Cloud, GCP, 阿里云, 腾讯云, 华为云, 火山引擎, 百度智能云]
+    rules:
+      - 使用官方模板：首页含活动名、讲题、讲者姓名与职位，末页为致谢 / 联系方式页
+      - 页数与时长匹配：每分钟不超过 1.5 页（25 分钟 ≈ 不超过 38 页）
+      - 可读性：正文字号不小于 18pt，单页文字不超过约 6 行；代码截图需在投影上可读
+      - 中立性：标题与正文避免出现与亚马逊云科技存在竞争关系的云平台品牌；确需对比时保持客观并提前告知组委会
+      - 推广克制：公司 / 产品介绍不超过 1 页（赞助商专场除外），不放招聘或二维码广告墙
+      - 合规：不含个人隐私、客户敏感数据、内部机密及未授权的图片 / 字体
+      - 一致性：PPT 标题与已提交的议题一致，如需修改请先告知组委会
+      - 国际讲者 / 国际听众场次请提供英文或双语版本
+
+# 录用 / 候补 / 拒绝邮件永远不会因飞书改状态而自动发出：只能在后台「发信台」审批批次后发送。
+# 催交提醒（reminders）不占名额、幂等，由每日定时任务自动发送。
+mail:
+  from: noreply@awscommunity.cn
+  testTo: ""
+
+reminders:
+  - { id: photo, audience: speaker, when: photo-missing, days: [-38, -35, -30], subject: 请补充讲者照片（海报制作需要） }
+  - { id: confirm, audience: speaker, when: unconfirmed, days: [-40, -39], subject: 请确认出席 }
+  - { id: deck-draft, audience: speaker, when: deck-missing, days: [-20, -18, -17], subject: PPT 初稿提交提醒 }
+  - { id: deck-final, audience: speaker, when: deck-final-missing, days: [-10, -8], subject: PPT 终稿提交提醒 }
+  - { id: logo, audience: sponsor, when: logo-missing, days: [-30, -25, -21], subject: 请提交高清 Logo（SVG / AI / 高清 PNG） }
+
+feishu:
+  # 多维表格 appToken 与表 ID：cdkit feishu:init --apply 建表后自动回填（公开仓库不提交真实值）
+  appToken: ""
+  tables:
+    cfp: ""
+    speakers: ""
+    sponsors: ""
+    volunteers: ""
+    todos: ""
+
+ai:
+  enabled: true
+  region: us-west-2
+  model: anthropic.claude-opus-5-5
+  fastModel: anthropic.claude-haiku-5-5
+
+# 角色 → 人（playbook 按角色分派）。role 可写多个，用 / 分隔
+team:
+  - { name: （填写）, role: 统筹 }
+  - { name: （填写）, role: 讲师/议程 }
+  - { name: （填写）, role: 宣发 }
+  - { name: （填写）, role: 设计 }
+  - { name: （填写）, role: 赞助 }
+  - { name: （填写）, role: 志愿者 }
+  - { name: （填写）, role: 物料/场地 }
+  - { name: （填写）, role: 技术 }

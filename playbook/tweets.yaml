@@ -1,0 +1,22 @@
+# 推文排期（来自 2026 秋「推文时间轴」表，按 D-N 偏移）。
+# 每条推文：素材需提前 5–7 个工作日到位、设计图提前 3–5 天、排版提前 3 天。
+# automation：cdkit copy tweet <id> 会读取当时的嘉宾 / 议程 / 赞助数据生成初稿。
+
+- { id: tw-launch, phase: 预热期, kind: tweet, title: 正式定档官宣（时间地点 + 主题 + 合作伙伴）, owner: 宣发, offset: -47,
+    needs: [kv-final], automation: "初稿由 event.yaml + 合作伙伴表生成" }
+- { id: tw-speakers-1, phase: 预热期, kind: tweet, title: 首批重磅嘉宾揭晓（每人一张海报 + 阵容拼图）, owner: 宣发, offset: -40,
+    needs: [photos-done], automation: "嘉宾简介润色 + 海报批量生成" }
+- { id: tw-register, phase: 报名期, kind: tweet, title: 倒计时 1 个月 · 报名开启, owner: 宣发, offset: -30 }
+- { id: tw-agenda, phase: 倒计时期, kind: tweet, title: 完整议程出炉（全天日程 + Workshop 预约 + After Party）, owner: 宣发, offset: -24,
+    needs: [agenda-freeze], automation: "议程长图数据由官网日程导出" }
+- { id: tw-tracks, phase: 倒计时期, kind: tweet, title: 分论坛深度解读（主题背景 / 适合谁 / 能带走什么）, owner: 宣发, offset: -19,
+    detail: "各论坛出品人提前 4 天交素材", automation: "按赛道汇总已确认讲题，生成每个论坛的解读初稿给出品人改" }
+- { id: tw-venue, phase: 倒计时期, kind: tweet, title: 倒计时 2 周 · 场地实拍 + 交通攻略, owner: 宣发, offset: -14 }
+- { id: tw-guide, phase: 倒计时期, kind: tweet, title: 倒计时 1 周 · 现场参与全攻略（签到 / 打卡 / 核销 / 抽奖 / 地图）, owner: 宣发, offset: -7,
+    automation: "互动规则从 event.yaml 渲染，推文与现场立牌、志愿者手册同源" }
+- { id: tw-workshop, phase: 倒计时期, kind: tweet, title: Workshop 专场（自带电脑提醒 + 礼品）, owner: 宣发, offset: -7 }
+- { id: tw-3days, phase: 倒计时期, kind: tweet, title: 倒计时 3 天（天气 / 最终议程 / 直播预约）, owner: 宣发, offset: -3 }
+- { id: tw-live, phase: 活动日, kind: tweet, title: 活动进行中（开场 + 中场快讯 + 金句）, owner: 宣发, offset: 0 }
+- { id: tw-xhs, phase: 活动日, kind: tweet, title: 小红书打卡文案池（扫码随机领取，换午餐券）, owner: 宣发, offset: -2,
+    automation: "cdkit copy xhs --count 200 批量生成不重复文案" }
+- { id: tw-recap, phase: 回顾期, kind: tweet, title: 活动回顾（数据亮点 + 精彩瞬间 + 致谢）, owner: 宣发, offset: 3 }

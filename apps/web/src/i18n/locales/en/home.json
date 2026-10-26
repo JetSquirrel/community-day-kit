@@ -1,0 +1,64 @@
+{
+  "hero": {
+    "kicker": "2026 COMMUNITY DAY · SHENZHEN · USER GROUP",
+    "ctaCfp": "Submit a Proposal",
+    "ctaCfpClosed": "CFP Closed →",
+    "ctaSchedule": "View Schedule →",
+    "scrollHint": "SCROLL · DOWN THE BRIDGE",
+    "bridgeAlt": "A blue arch bridge spanning two shores, with a person and a robot crossing side by side"
+  },
+  "story": {
+    "title": "This summer, we found the signal.",
+    "body": "In the summer of 2026, Signal over Noise taught us to spot the signals that truly matter amid the noise of information. On October 17 in Shenzhen, we take the next step: turning the signal into a bridge — connecting people with technology, and today with tomorrow."
+  },
+  "stats": {
+    "title": "One Day, Full Signal"
+  },
+  "highlights": {
+    "title": "Why We Cross It"
+  },
+  "bridge": {
+    "ariaLabel": "A suspension bridge being built piece by piece",
+    "caption": "THE BRIDGE BUILDS ITSELF · BUILT BY THE COMMUNITY"
+  },
+  "tracks": {
+    "title": "Four Bridges, Four Crossings",
+    "sub": "Four parallel tracks, each a different kind of bridge. Pick one crossing — or walk them all.",
+    "illustrationAlt": "Bridge illustration for {{title}}",
+    "viewAgenda": "View this bridge's agenda"
+  },
+  "agenda": {
+    "title": "A Day's Route Across the Bridge",
+    "fullSchedule": "Full Schedule"
+  },
+  "speakers": {
+    "title": "People on the Bridge",
+    "titleSub": "Speakers",
+    "allSpeakers": "All Speakers",
+    "openSeat": "Your Seat Awaits",
+    "yourSeat": "Under review → /cfp",
+    "openSeatNote": "Seats revealed soon"
+  },
+  "cfp": {
+    "title": "Bring your signal onto the bridge",
+    "body": "The call for proposals closed on 2026.08.31 — thanks to everyone who transmitted a signal. Reviews are underway and results will be emailed to submitters.",
+    "cta": "CFP Details",
+    "deadlineNote": "Closed — thanks!"
+  },
+  "sponsors": {
+    "title": "Co-build This Bridge",
+    "titleSub": "Sponsors",
+    "sub": "Every bridge has its co-builders. Our thanks to these partners for building alongside the community.",
+    "become": "Become a Co-builder",
+    "paidLabel": "Sponsors",
+    "partnersLabel": "Community Partners"
+  },
+  "info": {
+    "title": "Know Before You Cross",
+    "subscribed": "✓ You're on the list — we'll notify you as soon as registration opens",
+    "emailPlaceholder": "you@example.com",
+    "emailAria": "Email",
+    "notify": "Notify me when registration opens",
+    "allFaq": "All Questions"
+  }
+}

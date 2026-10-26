@@ -1,0 +1,22 @@
+# 设计物料清单（来自 2026 秋「设计图汇总清单」，截止日 = 对应推文前 3–5 天）。
+# 标 automation 的条目由系统用设计底图自动批量生成，设计只需交一次底图。
+
+- { id: ds-kv, phase: 预热期, kind: design, title: 主视觉（横 1200×630 / 竖 1080×1920 / 方 1080×1080）, owner: 设计, offset: -48 }
+- { id: ds-logo-wall, phase: 预热期, kind: design, title: 合作伙伴 Logo 墙 1920×1080, owner: 设计, offset: -46,
+    automation: "官网赞助页按档位自动排版，可直接截图/导出" }
+- { id: ds-speaker-base, phase: 预热期, kind: design, title: 嘉宾海报底图（标注照片框/文字区，1080×1350）, owner: 设计, offset: -45,
+    detail: "交底图后由系统按人批量生成，不再逐张做" }
+- { id: ds-speaker-posters, phase: 预热期, kind: design, title: 嘉宾个人海报（全部讲者）, owner: 设计, offset: -41,
+    needs: [ds-speaker-base, photos-done], automation: "后台批量生成 zip；照片已在上传时按 4:5 规格裁好" }
+- { id: ds-community-posters, phase: 预热期, kind: design, title: 合作社区专属邀请海报（社区 logo + 专属报名二维码）, owner: 设计, offset: -40,
+    automation: "按合作社区表批量生成，二维码带 utm 渠道参数统计引流" }
+- { id: ds-agenda, phase: 倒计时期, kind: design, title: 议程长图 / 议程总览 1920×1080, owner: 设计, offset: -26 }
+- { id: ds-tracks, phase: 倒计时期, kind: design, title: 分论坛长图 ×N, owner: 设计, offset: -22 }
+- { id: ds-countdown, phase: 倒计时期, kind: design, title: 倒计时海报（1 月 / 2 周 / 1 周 / 3 天）, owner: 设计, offset: -32,
+    detail: "一次出一套，替换数字即可" }
+- { id: ds-map, phase: 倒计时期, kind: design, title: 场地导览平面图 / 展位分布图 1200×900（需高清）, owner: 设计, offset: -12 }
+- { id: ds-rules, phase: 倒计时期, kind: design, title: 签到流程图 + 互动玩法图解 + 规则立牌, owner: 设计, offset: -10 }
+- { id: ds-print, phase: 倒计时期, kind: design, title: 线下物料定稿（门头 / 导视 / 背景板 / 立牌 / 吊旗），留印刷周期, owner: 设计, offset: -15 }
+- { id: ds-live, phase: 活动日, kind: design, title: 直播封面 + 活动日头图 + 现场快拍模板, owner: 设计, offset: -2 }
+- { id: ds-quotes, phase: 活动日, kind: design, title: 嘉宾金句海报（现场实时）, owner: 设计, offset: 0, automation: "金句海报模板化，现场填字导出" }
+- { id: ds-recap, phase: 回顾期, kind: design, title: 回顾长图 + 九宫格 + 数据信息图, owner: 设计, offset: 2 }

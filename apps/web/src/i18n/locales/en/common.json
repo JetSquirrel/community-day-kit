@@ -1,0 +1,57 @@
+{
+  "nav": {
+    "overview": "Overview",
+    "schedule": "Schedule",
+    "speakers": "Speakers",
+    "cfp": "CFP",
+    "sponsors": "Sponsors",
+    "volunteers": "Volunteers",
+    "faq": "FAQ",
+    "past": "Past Events"
+  },
+  "meta": {
+    "title": "Bridge with Signal — 2026 AWS Community Day Shenzhen",
+    "description": "Bridge with Signal · Bridging today with tomorrow's signal — 2026 AWS Community Day Shenzhen, the annual user community conference. 2026.10.17, 600+ developers, 20+ tech talks, 4 parallel tracks."
+  },
+  "site": {
+    "event": "2026 AWS Community Day · Shenzhen",
+    "city": "Shenzhen, China",
+    "nameCn": "Bridging today with tomorrow's signal",
+    "dateChip": "10.17 SAT"
+  },
+  "footer": {
+    "communityTitle": "AWS User Group Community",
+    "communityBody": "AWS User Groups are self-organized communities of AWS developers around the world. We host regular tech talks, hands-on labs, and the annual Community Day — bringing valuable signals to every builder.",
+    "quickNav": "Quick Links",
+    "contactTitle": "Contact",
+    "qrAlt": "WeChat Official Account QR code (placeholder)",
+    "qrCaption": "WeChat Official Account · Scan to follow",
+    "organizerTitle": "Organizers",
+    "organizerHost": "Host: AWS User Group Community",
+    "organizerSupport": "Supported by: AWS",
+    "copyright": "© 2026 AWS User Group Community · BRIDGE WITH SIGNAL",
+    "locationBar": "SHENZHEN // 10.17"
+  },
+  "common": {
+    "register": "Register Now"
+  },
+  "notFound": {
+    "label": "OFF THE MAP",
+    "title": "This End of the Bridge Goes Nowhere",
+    "note": "The page you visited doesn't exist or has moved. Head back onto the bridge and keep going.",
+    "comingSoon": "COMING SOON · UNDER CONSTRUCTION",
+    "backHome": "Back to Home"
+  },
+  "aria": {
+    "home": "Bridge with Signal Home",
+    "mainNav": "Main navigation",
+    "mobileNav": "Mobile navigation",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "comingSoon": {
+    "label": "COMING SOON",
+    "title": "In the Works",
+    "note": "The schedule is being finalized and is not public yet. The speaker lineup is live — meet this year's speakers in the meantime."
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "hero": {
+    "title": "Become a Bridge Keeper",
+    "desc": "Behind 600+ smooth crossings stands a crew of Bridge Keepers. Check-in, wayfinding, livestream, photography, guest reception — pick a post and keep the day with us.",
+    "cta": "Apply to Be a Bridge Keeper",
+    "status": "STATUS // RECRUITING · Deadline 09.30"
+  },
+  "roles": {
+    "title": "Six Keeper Posts",
+    "sub": "Every post comes with training and shift rotations. No experience required — just bring your sense of responsibility."
+  },
+  "perks": {
+    "title": "What Keepers Get"
+  },
+  "day": {
+    "title": "A Keeper's Day"
+  },
+  "apply": {
+    "title": "Ready to Keep the Bridge?",
+    "cta": "Fill Out the Application",
+    "deadline": "Applications Close // 2026.09.30 · Results // 10.08"
+  },
+  "form": {
+    "kicker": "APPLY // BRIDGE KEEPERS",
+    "title": "Ready to Keep the Bridge?",
+    "nameLabel": "Name",
+    "namePlaceholder": "What should we call you",
+    "emailLabel": "Email",
+    "emailPlaceholder": "Where the result notice goes",
+    "phoneLabel": "Phone (optional)",
+    "phonePlaceholder": "For urgent contact before the event",
+    "roleLabel": "Preferred Post",
+    "noteLabel": "Notes (optional)",
+    "notePlaceholder": "Availability / relevant experience — a sentence or two is plenty",
+    "note": "Applications close 2026.09.30 · results by email before 10.08",
+    "privacy": "By submitting, you agree that we process your name, email, optional phone, and preferred role solely for volunteer scheduling and contact. Data is stored in the organizers' Feishu base and an encrypted backup, retained per the organizers' retention policy after the event.",
+    "submitting": "Submitting…",
+    "submitCta": "Submit Application →",
+    "doneKicker": "RECEIVED",
+    "doneTitle": "Application Received 🎉",
+    "doneBody": "We've received your Bridge Keeper application ({{role}}). The result will be emailed to {{email}} before 10.08.",
+    "errorFallback": "Submission failed. Please try again later.",
+    "mailtoHint": "Prefer email? You can also send it to"
+  }
+}

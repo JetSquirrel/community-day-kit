@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <rect width="1200" height="800" fill="#FFD900"/>
+  <g font-family="monospace" font-size="20" fill="#141414">
+    <!-- tower -->
+    <rect x="356" y="200" width="28" height="300" fill="none" stroke="#141414" stroke-width="4"/>
+    <rect x="796" y="200" width="28" height="300" fill="none" stroke="#141414" stroke-width="4"/>
+    <!-- main cable -->
+    <path d="M100 260 L370 208 Q600 330 830 208 L1100 260" fill="none" stroke="#141414" stroke-width="4" stroke-linecap="round"/>
+    <!-- hangers -->
+    <g stroke="#141414" stroke-width="2.5">
+      <path d="M430 235.7 V470"/><path d="M490 255 V470"/><path d="M550 266.1 V470"/>
+      <path d="M610 268.9 V470"/><path d="M670 263.4 V470"/><path d="M730 249.5 V470"/><path d="M790 227.4 V470"/>
+    </g>
+    <!-- deck -->
+    <rect x="100" y="470" width="1000" height="20" fill="none" stroke="#141414" stroke-width="4"/>
+    <!-- piers -->
+    <rect x="356" y="490" width="28" height="150" fill="none" stroke="#141414" stroke-width="4"/>
+    <rect x="796" y="490" width="28" height="150" fill="none" stroke="#141414" stroke-width="4"/>
+    <!-- water -->
+    <path d="M300 684 q16 -10 32 0 t32 0" fill="none" stroke="#141414" stroke-width="3" stroke-linecap="round"/>
+    <path d="M820 684 q16 -10 32 0 t32 0" fill="none" stroke="#141414" stroke-width="3" stroke-linecap="round"/>
+    <!-- callout: diamond / tower -->
+    <rect x="120" y="108" width="30" height="30" fill="#6C3FD4" stroke="#141414" stroke-width="3"/>
+    <text x="162" y="131">主塔 · DIAMOND</text>
+    <path d="M150 138 L366 214" stroke="#141414" stroke-width="2.5" fill="none"/>
+    <circle cx="368" cy="215" r="4.5" stroke="none"/>
+    <!-- callout: platinum / cable -->
+    <rect x="560" y="78" width="30" height="30" fill="#2B5CE6" stroke="#141414" stroke-width="3"/>
+    <text x="602" y="101">主缆 · PLATINUM</text>
+    <path d="M575 108 L598 258" stroke="#141414" stroke-width="2.5" fill="none"/>
+    <circle cx="598" cy="260" r="4.5" stroke="none"/>
+    <!-- callout: gold / deck -->
+    <rect x="1060" y="418" width="30" height="30" fill="#FF8A00" stroke="#141414" stroke-width="3"/>
+    <text x="1048" y="441" text-anchor="end">桥面 · GOLD</text>
+    <path d="M1060 433 L996 474" stroke="#141414" stroke-width="2.5" fill="none"/>
+    <circle cx="994" cy="475" r="4.5" stroke="none"/>
+    <!-- callout: silver / pier -->
+    <rect x="180" y="678" width="30" height="30" fill="#FFF9E3" stroke="#141414" stroke-width="3"/>
+    <text x="222" y="701">桥墩 · SILVER</text>
+    <path d="M210 678 L364 622" stroke="#141414" stroke-width="2.5" fill="none"/>
+    <circle cx="366" cy="621" r="4.5" stroke="none"/>
+  </g>
+</svg>

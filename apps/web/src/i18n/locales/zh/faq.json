@@ -1,0 +1,21 @@
+{
+  "hero": {
+    "kicker": "FAQ // CROSSING GUIDE",
+    "title": "过桥指南",
+    "sub": "第一次过桥，总有问题。找不到答案？写信给守桥人："
+  },
+  "explorer": {
+    "searchLabel": "搜索问题",
+    "searchPlaceholder": "搜索问题…",
+    "filterAria": "按分类过滤",
+    "emptyTitle": "NO SIGNAL // 没有找到相关答案",
+    "emptyCta": "直接问守桥人"
+  },
+  "mailSubject": "过桥提问 // Bridge with Signal",
+  "band": {
+    "title": "没找到答案？",
+    "sub": "守桥人在桥的另一端等你。",
+    "cta": "发邮件给我们",
+    "note": "响应时间 // 1–2 个工作日"
+  }
+}

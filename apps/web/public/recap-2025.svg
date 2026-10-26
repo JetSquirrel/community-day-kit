@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <rect width="800" height="600" fill="#FFD900"/>
+  <!-- signal arcs -->
+  <g fill="none" stroke="#141414" stroke-width="4" stroke-linecap="round">
+    <path d="M330 150 Q400 90 470 150"/>
+    <path d="M300 120 Q400 40 500 120"/>
+    <path d="M270 90 Q400 -10 530 90"/>
+  </g>
+  <!-- tower -->
+  <path d="M360 440 L392 180 L408 180 L440 440 Z" fill="#FF4D3D" stroke="#141414" stroke-width="4" stroke-linejoin="round"/>
+  <g stroke="#141414" stroke-width="3">
+    <path d="M368 380 H432"/><path d="M376 320 H424"/><path d="M384 260 H416"/>
+  </g>
+  <circle cx="400" cy="164" r="10" fill="#6C3FD4" stroke="#141414" stroke-width="3"/>
+  <!-- audience -->
+  <g fill="#141414">
+    <circle cx="280" cy="470" r="18"/><path d="M250 545 A30 30 0 0 1 310 545 Z"/>
+    <circle cx="400" cy="480" r="18"/><path d="M370 555 A30 30 0 0 1 430 555 Z"/>
+    <circle cx="520" cy="470" r="18"/><path d="M490 545 A30 30 0 0 1 550 545 Z"/>
+  </g>
+</svg>

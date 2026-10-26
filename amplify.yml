@@ -1,0 +1,49 @@
+# Amplify Hosting（Gen2）。每个分支通过环境变量 CDKIT_EVENT 选择活动，例如：
+#   main            → CDKIT_EVENT=2026-autumn-shenzhen
+#   2027-spring     → CDKIT_EVENT=2027-spring-hangzhou
+# 同一个仓库可以同时托管多届官网，代码完全共用。
+version: 1
+backend:
+  phases:
+    build:
+      commands:
+        - test -n "$CDKIT_EVENT" || (echo "请在 Amplify 控制台为该分支设置 CDKIT_EVENT" && exit 1)
+        - npm ci --no-audit --no-fund
+        # 单测 + 配置校验：event.yaml 有问题直接让部署失败
+        - npm test
+        - npm run cdkit -- check $CDKIT_EVENT
+        - npm run cdkit -- use $CDKIT_EVENT
+        - node --test backend/amplify/functions/admin-api/lib.test.mjs
+        - cd backend && npx ampx pipeline-deploy --branch $AWS_BRANCH --app-id $AWS_APP_ID && cd ..
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - npm ci --prefix apps/web --no-audit --no-fund
+        - test -f backend/amplify_outputs.json
+        - cp backend/amplify_outputs.json apps/web/amplify_outputs.json
+        - node -e "const o=require('./backend/amplify_outputs.json');const u=o.custom&&o.custom.adminApiUrl;if(!u){console.error('adminApiUrl missing');process.exit(1)};require('fs').writeFileSync('apps/web/.env','VITE_ADMIN_API_URL='+u+'\n'+(process.env.VITE_CONTENT_BASE_URL?'VITE_CONTENT_BASE_URL='+process.env.VITE_CONTENT_BASE_URL+'\n':''))"
+    build:
+      commands:
+        - npm run build --prefix apps/web
+  artifacts:
+    baseDirectory: apps/web/dist
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*
+      - apps/web/node_modules/**/*
+customHeaders:
+  - pattern: '**/*'
+    headers:
+      - key: Strict-Transport-Security
+        value: 'max-age=31536000; includeSubDomains'
+      - key: X-Content-Type-Options
+        value: nosniff
+      - key: Referrer-Policy
+        value: strict-origin-when-cross-origin
+      - key: X-Frame-Options
+        value: DENY
+      - key: Permissions-Policy
+        value: 'camera=(), microphone=(), geolocation=()'

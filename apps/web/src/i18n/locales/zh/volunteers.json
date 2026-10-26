@@ -1,0 +1,45 @@
+{
+  "hero": {
+    "title": "守桥人招募",
+    "desc": "600+ 人顺利过桥的背后，是一群守桥人。签到、引导、直播、摄影、接待——选一个岗位，和我们一起把这一天守好。",
+    "cta": "申请成为守桥人",
+    "status": "STATUS // RECRUITING · 截止 09.30"
+  },
+  "roles": {
+    "title": "六个守桥岗位",
+    "sub": "所有岗位均提供培训与轮岗，无需经验，带来责任心即可。"
+  },
+  "perks": {
+    "title": "守桥人的回报"
+  },
+  "day": {
+    "title": "守桥人的一天"
+  },
+  "apply": {
+    "title": "准备好守桥了吗？",
+    "cta": "填写申请表",
+    "deadline": "招募截止 // 2026.09.30 · 结果通知 // 10.08"
+  },
+  "form": {
+    "kicker": "APPLY // BRIDGE KEEPERS",
+    "title": "准备好守桥了吗？",
+    "nameLabel": "称呼",
+    "namePlaceholder": "怎么称呼你",
+    "emailLabel": "邮箱",
+    "emailPlaceholder": "录取通知发到这里",
+    "phoneLabel": "手机号（可选）",
+    "phonePlaceholder": "活动前紧急联络用",
+    "roleLabel": "意向岗位",
+    "noteLabel": "备注（可选）",
+    "notePlaceholder": "可服务时段 / 相关经验，一两句就好",
+    "note": "招募截止 2026.09.30 · 结果 10.08 前邮件通知",
+    "privacy": "提交即表示你同意我们仅为本次活动志愿者排班与联络处理你的姓名、邮箱、手机号（可选）及意向岗位；数据保存在组委会飞书多维表格及加密备份中，活动结束后按组委会保留政策处理。",
+    "submitting": "提交中…",
+    "submitCta": "提交申请 →",
+    "doneKicker": "RECEIVED // 已收到",
+    "doneTitle": "申请已收到 🎉",
+    "doneBody": "我们已收到你的守桥人申请（{{role}}）。结果会在 10.08 前通过邮件发送到 {{email}}。",
+    "errorFallback": "提交失败，请稍后重试",
+    "mailtoHint": "更习惯邮件？也可以发送至"
+  }
+}

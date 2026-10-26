@@ -1,0 +1,21 @@
+{
+  "hero": {
+    "kicker": "FAQ // CROSSING GUIDE",
+    "title": "Crossing Guide",
+    "sub": "First time crossing? Questions come with the territory. Can't find yours? Write to the Bridge Keepers: "
+  },
+  "explorer": {
+    "searchLabel": "Search questions",
+    "searchPlaceholder": "Search questions…",
+    "filterAria": "Filter by category",
+    "emptyTitle": "NO SIGNAL // No matching answers",
+    "emptyCta": "Ask the Bridge Keepers directly"
+  },
+  "mailSubject": "Bridge Question // Bridge with Signal",
+  "band": {
+    "title": "Still no answer?",
+    "sub": "The Bridge Keepers are waiting at the other end of the bridge.",
+    "cta": "Email Us",
+    "note": "RESPONSE TIME // 1–2 business days"
+  }
+}

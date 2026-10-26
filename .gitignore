@@ -1,0 +1,17 @@
+node_modules
+dist
+.env
+.env.*
+!.env.example
+.amplify
+amplify_outputs*.json
+*.log
+.DS_Store
+
+# cdkit 生成物（每次可重新生成）
+out/
+apps/web/src/event.generated.json
+backend/amplify/event.generated.json
+
+# 复盘文档基于内部会议纪要，只留本地
+docs/LESSONS-*.md
